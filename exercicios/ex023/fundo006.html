@@ -3,20 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
             height: 100vh;
-            background-color: black;
+            /* background-color: black;
             background-image: url("imagens/wallpaper002.jpg");
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;
+            /*
+
+            /*
+             Shorthand - background
+            Usar nessa ordem:
+            color > image > position > repeat > [size] > attachment
+            OBS: O size apesar de aplicável, não funciona atualmente nos navegadores então precisa ser retirado do shorthand e colocado separado.
+            Exemplo abaixo: 
+             */
+
+             background: black url("imagens/wallpaper002.jpg") center center no-repeat fixed;
+             background-size: cover;
+
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -27,7 +41,11 @@
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda et ut quod est iste ex ipsam possimus. Voluptas, voluptate itaque quam quidem id doloribus quis voluptatum aspernatur nobis quibusdam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsa architecto numquam voluptatibus velit dolor nostrum accusamus mollitia nemo nesciunt? At, consequatur quae rerum unde sapiente inventore error officiis corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta vero non rerum voluptates iste commodi, repudiandae quo facilis tempora, debitis id ex consequatur fugit doloremque blanditiis, consequuntur nisi. Ipsa, eos.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda et ut quod est iste ex ipsam possimus. Voluptas, voluptate itaque quam quidem id doloribus quis voluptatum aspernatur nobis quibusdam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsa architecto numquam voluptatibus velit dolor nostrum accusamus mollitia nemo nesciunt? At, consequatur quae rerum unde sapiente inventore error officiis corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta vero non rerum voluptates iste commodi, repudiandae quo facilis tempora, debitis id ex consequatur fugit doloremque blanditiis, consequuntur nisi. Ipsa, eos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta enim totam non quaerat saepe sit omnis delectus. Quod reiciendis a ducimus debitis fuga quas, voluptates, voluptate excepturi doloribus alias eligendi?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, totam perferendis tempore consectetur consequatur suscipit blanditiis? Aliquid ipsa, voluptas nisi id ducimus, provident odit, asperiores voluptates obcaecati laboriosam explicabo amet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, odit maiores veritatis nesciunt velit suscipit aspernatur reprehenderit asperiores ratione? Commodi quo officiis quia dolore accusamus iste quasi consectetur soluta a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum cum aspernatur autem eos eum, id, natus doloremque provident porro sunt voluptatibus. Iusto, architecto ab animi neque expedita eaque id eos! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt quibusdam magnam, officiis architecto magni ad nobis vero rerum. Sed laudantium quis placeat pariatur voluptate fuga aliquid ipsum quos distinctio commodi.</p>
     </main>
 </body>
 </html>
