@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de iframe</title>
+    <style>
+
+        /* 
+
+        O css é soberano, ou seja, se tiver uma configuração aqui e outra no html, a que ta no css que vai ser aplicada.
+
+        */
+        iframe {
+            width: 400px;
+            height: 400px;
+            border: 1px solid black
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando o uso de um iframe</h1>
+    <p>
+
+        <!-- 
+        
+        Tamanho padrão do iframe é de 300x150px. 
+        Caso não tenha configuração no css e nem html, esse tamanho entrará automático.
+
+        -->
+
+        Acessando o site do 
+        
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" height="500" scolling="no"> <!--scolling depende do navegador para funcionar-->
+            <a href="https://ww.cursoemvideo.com" target="_blank">Curso em Vídeo</a>
+        </iframe>
+        
+        para aprender a programar.
+    </p>
+    <p>
+        O repositório do Guanabara
+         <iframe src="https://gustavoguanabara.github.io" frameborder="0" height="500" width="500">
+            <a href="https://gustavoguanabara.github.io" target="_blank">no Github</a>
+         </iframe> 
+         também é bem legal!
+    </p>
+</body>
+</html>
