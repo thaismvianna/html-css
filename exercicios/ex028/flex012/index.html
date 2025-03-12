@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible box</title>
+    <style>
+        div.conteiner {
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        div#cxA {
+            /* flex-shrink: 0;
+            flex-grow: 1;
+            flex-basis: 200px; */
+
+            /* Pode simplificar com (usar de preferencia essa simplificação e sempre seguindo flex: shrink, grow e basis): 
+            
+            Para deixar padrao é flex: 0 1 auto ou flex: initial, caso queira declarar
+            
+            flex: 0 0 auto ou flex: none não vai ser flexível e vai depender do conteúdo 
+            
+            flex: 1 1 auto ou flex: auto é total flexível acompanhando o conteúdo 
+            
+            flex: algum número, ex: flex: 3 é apenas deixar o flex: grow. É a mesma coisa que colocar flex: 3 1 auto */
+            flex: 1 0 200px;
+        }
+
+        div#cxB {
+            flex: 1 1 150px;
+        }
+
+        div#cxC {
+            flex: 8 1 auto;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">B</div>
+        <div class="item" id="cxC">C</div>
+    </div>
+</body>
+</html>
