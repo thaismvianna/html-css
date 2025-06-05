@@ -20,7 +20,6 @@ O curso é dividido em **5 módulos**.
 
 - 📂 **Desafios**  
   Desafios propostos para consolidar o aprendizado com mini projetos criativos, incluindo:
-  - Página de links de redes sociais
   - Página com uso de tags semânticas
   - Landing Page sobre **Outubro Rosa** e **Câncer de Mama**
   - Projeto "Cordel Moderno" com efeito parallax
